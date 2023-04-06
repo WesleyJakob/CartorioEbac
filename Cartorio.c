@@ -126,6 +126,7 @@ int x = 1;
 		printf("\t 1- Inserir Usuário\n");
 		printf("\t 2- Consultar Usuário\n");
 		printf("\t 3- Deletar Usuário\n\n");
+		printf("\t 4- Sair do sistema\n\n");
 		printf("Opção:");//fim do menu
 		
 		scanf("%d", &opcao);// armazenando escolha do usuário na variavel opcao
@@ -143,6 +144,11 @@ int x = 1;
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema\n");
+			return 0;
 			break;
 				
 			default:
